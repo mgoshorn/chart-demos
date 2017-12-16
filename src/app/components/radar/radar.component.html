@@ -1,0 +1,27 @@
+<hr>
+<h2>Radar Demo</h2>
+<div class="row">
+  <div class="col-md-6">
+      <canvas baseChart
+      [datasets]="radarChartData"
+      [labels]="radarChartLabels"
+      [chartType]="radarChartType"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <div class="col-md-6">
+    <div id='data-container'>
+      <div class="row">
+        <div class="data-box data-head"></div>
+        <div *ngFor="let label of radarChartLabels" class="data-box data-head">
+          {{label}}
+        </div>
+      </div>
+    </div>
+  
+    <div class="row" *ngFor="let set of radarChartData; let id = index">
+        <div class="data-box data-head">{{set.label}}</div>
+        <div *ngFor="let data of radarChartData[id].data; let dataIndex = index" class="data-box">{{data}}</div>
+    </div>
+  </div>
+</div>
