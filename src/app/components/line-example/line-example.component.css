@@ -1,0 +1,14 @@
+.data-box {
+    width: 14.2%;
+    font-size: 80%;
+    text-align: center;
+    font-weight: bold;
+}
+.data-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3vmin;
+}
+h2 {
+    text-align: center;
+}
