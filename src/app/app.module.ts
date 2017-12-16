@@ -9,6 +9,7 @@ import { LineExampleComponent } from './components/line-example/line-example.com
 import { EntryComponent } from './components/entry/entry.component';
 import { BarComponent } from './components/bar/bar.component';
 import { RadarComponent } from './components/radar/radar.component';
+import { DoughnutComponent } from './components/doughnut/doughnut.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { RadarComponent } from './components/radar/radar.component';
     EntryComponent,
     BarComponent,
     RadarComponent,
+    DoughnutComponent,
   ],
   imports: [
     BrowserModule,
