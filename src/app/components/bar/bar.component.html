@@ -1,3 +1,28 @@
-<p>
-  bar works!
-</p>
+<hr>
+<h2>Bar Demo</h2>
+<div class="row">
+  <div class="col-md-6">
+      <canvas baseChart
+      [datasets]="barChartData"
+      [labels]="barChartLabels"
+      [options]="barChartOptions"
+      [legend]="barChartLegend"
+      [chartType]="barChartType"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <div class="col-md-6">
+      <div id='data-container'>
+        <div class="row">
+          <div class="data-box data-head"></div>
+          <div *ngFor="let label of barChartLabels" class="data-box data-head">
+            {{label}}
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngFor="let set of barChartData; let id = index">
+          <div class="data-box data-head">{{set.label}}</div>
+          <div *ngFor="let data of barChartData[id].data;" class="data-box">{{data}}</div>
+      </div>
+    </div>
+</div>
