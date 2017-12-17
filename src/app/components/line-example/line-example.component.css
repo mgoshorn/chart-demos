@@ -9,6 +9,22 @@
     margin-right: auto;
     padding: 3vmin;
 }
+
+.chartHead {
+    background: #be5108;
+    box-shadow: 0 1 1 1 lightgray;
+    color: white;
+    padding: 1vmin;
+    border: 1px solid lightgrey;
+}
+
+.chartContainer {
+    padding: 0.5vmin;
+    border: 1px solid lightgrey;
+    border-top: none;
+    background: white;
+}
+
 h2 {
     text-align: center;
 }
